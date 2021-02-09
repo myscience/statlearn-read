@@ -8,6 +8,4 @@ Dataset consists of 23 made-up characters (taken from the Brussels Artificial Ch
 
 Here is an example of a randomly sample 3-character word from the BACS2-serif character set. 
 
-<center>
-<img src="fig/word_0.png" alt="Example Word" width="50%" height="50%">
-</center>
+<img src="fig/word_0.png" alt="Example Word" align="middle" width="50%" height="50%">
