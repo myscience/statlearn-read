@@ -14,6 +14,9 @@ from PIL import Image
 
 chr_path = '../data/Characters/'
 
+# Final maximum size
+thm_size = (300, 300)
+
 # These are idx for standard and deviant character extraction
 word_idx = [[1,2,4],
             [5,2,3],
@@ -76,6 +79,9 @@ for i, chr_imgs in enumerate (chr_imgs_set):
 
     # Convert white pixels to alpha
     word = white2alpha(word)
+
+    # Here we downscale the image
+    word.thumbnail (thm_size, Image.ANTIALIAS)
 
     # Here we save the word in current dataset
     word.save(dataset + f'word_{i}.png')
